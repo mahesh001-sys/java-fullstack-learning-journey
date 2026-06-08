@@ -11,11 +11,11 @@ A structured repository documenting my progress learning Java full-stack develop
 - HTML, CSS, JavaScript
 
 ## 📁 Folder Structure
-java-basics/
-oop/
-collections/
-jdbc/
-spring-boot/
+java-Basics/
+OOP/
+Collections/
+JDBC/
+Spring-boot/
 
 ## 📈 Progress
 | Topic | Status |
