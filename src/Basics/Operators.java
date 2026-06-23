@@ -96,23 +96,52 @@ public class Operators {
         System.out.println("Passed      : " + passed);
         System.out.println("Distinction : " + distinction);
 
+        
         // -----Bitwise operator-------
         System.out.println("\n=== Bitwise operator ===");
+        //integral data
         int p = 5; // 0101
         int q = 3; // 0011
+        byte g=10;
+        short s=102;
+        int i=1001;
+        long o=-2002;
+        //character data
+        char ch='a';
+        char ss='A';
+        //boolean and floating point is not allowed to define with complement(~)
 
         System.out.println("p & q = " + (p & q));
         System.out.println("p | q = " + (p | q));
         System.out.println("p ^ q = " + (p ^ q));
         System.out.println("~p = " + (~p));
+        System.out.println("~i = " + (~i));
+        System.out.println("~s = " + (~s));
+        System.out.println("~g = " + (~g));
+        System.out.println("~o = " + (~o));
+        System.out.println("~a = " + (~ch));
+        System.out.println("~A = " + (~ss));
+
+
 
         // ---- Shift Operators-----
         System.out.println("\n=== Shift Operator ===");
+        // define with only integral data(any signed data) and character data
         int num = 8;
+        char sw='a';
+        char wa='A';
+        System.out.println(sw << 2);//left shift sw 'a' = 388 formula-->(data*2^n)
+        System.out.println(wa >> 1);//right shift wa 'A' = 32
+        System.out.println(-11 >> 1);//right shift is halves the given input to get output -11 = -6
+        System.out.println(-11 << 2);//left shift of negative 11 = -44
+        System.out.println(num << 1);//left shift num 8 = 16
+        System.out.println(num >> 1);//right shift num 8 = 4  formula-->(data/2^n)
+        System.out.println(12 >> 1 );// formula-->(data/2^n) result = 6
+        System.out.println(num >>> 1);//unsigned right shift (define with only positive value)num 8 = 4
+        System.out.println(-12 >>> 2);//gives an error
 
-        System.out.println(num << 1);
-        System.out.println(num >> 1);
-        System.out.println(num >>> 1);
+
+
 
         //----ternary operator----
         System.out.println("\n=== ternary operator ===");
