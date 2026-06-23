@@ -67,7 +67,7 @@ public class Operators {
         System.out.println(z);//z=11
         //-----example=-----
         int y=10;
-        int res=y++ + --y + ++y - y--;
+        int res=y++ + --y + ++y - y--; // right --- left to get the result
         System.out.println(res);//res=20
 
         // ── Comparison operators ──────────────────
@@ -109,6 +109,7 @@ public class Operators {
         //character data
         char ch='a';
         char ss='A';
+        
         //boolean and floating point is not allowed to define with complement(~)
 
         System.out.println("p & q = " + (p & q));
